@@ -1,15 +1,12 @@
-.proyect-coverses{
+.project-coverses{
     display: grid;
-   /*  flex-direction: row;
-    flex-wrap:nowrap */
-    gap: 0px;
+  
     grid-template-columns: 1fr 1fr;
 }
-.bloque{display: inline-block;
-width: 50%;
+.bloque{
 cursor: pointer;
 
-height: 40vh;}
+height: 42vh;}
 .imagen-cover{
     overflow: hidden;
     width: 100%;
@@ -20,9 +17,12 @@ height: 40vh;}
     opacity: 0;
     background: black;
     position: absolute;
-    width: inherit;
+    width: 50%;
     height: inherit;
-    color: white;
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
 }
 .cover:hover{
