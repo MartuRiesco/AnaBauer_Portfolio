@@ -1,0 +1,14 @@
+.proyect-coverses{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap
+}
+.bloque{display: inline-block;
+width: 50%;
+height: 50%;}
+.imagen-cover{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
