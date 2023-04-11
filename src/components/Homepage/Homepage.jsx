@@ -8,10 +8,15 @@ function Homepage() {
 <div>
 <div class="project-coverses">
 <div className='bloque'>
+<div className='cover'>
+    <h2>Fotografia digital</h2>
+  </div>
   <img  className='imagen-cover' src='https://i.imgur.com/G2dUvde.jpg' alt='fprp'></img>
+  
   </div>
 <div className='bloque'>
   <img  className='imagen-cover' src='https://i.imgur.com/4HeKccU.jpg' alt='foto'></img>
+
   </div>
 <div className='bloque'>
   <img  className='imagen-cover' src='https://i.imgur.com/G2dUvde.jpg' alt='frfp'></img>
