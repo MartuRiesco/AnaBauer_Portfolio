@@ -1,0 +1,12 @@
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+}
+.icon{
+  size: 20px;
+    color:white;
+}

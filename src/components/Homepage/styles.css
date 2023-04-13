@@ -1,11 +1,10 @@
 .project-coverses{
+
     display: grid;
-  
     grid-template-columns: 1fr 1fr;
 }
-.bloque{
-cursor: pointer;
 
+.bloque{
 height: 42vh;}
 .imagen-cover{
     overflow: hidden;

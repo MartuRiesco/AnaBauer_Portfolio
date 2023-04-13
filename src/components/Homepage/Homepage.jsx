@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles.css'
+import { Link } from 'react-router-dom'
 
 function Homepage() {
   
@@ -7,32 +8,33 @@ function Homepage() {
 
 <div>
 <div className="project-coverses">
+<Link to='/fotodigital'>
 <div className='bloque'>
 <div className='cover'>
     <h2>Fotografia digital</h2>
   </div>
   <img  className='imagen-cover' src='https://i.imgur.com/G2dUvde.jpg' alt='fprp'></img>
   
-  </div>
-<div className='bloque'>
+  </div></Link>
+  <Link to='fotofija'><div className='bloque'>
 <div className='cover'>
     <h2>Fotografia 35mm </h2>
   </div>
   <img  className='imagen-cover' src='https://i.imgur.com/4HeKccU.jpg' alt='foto'></img>
 
-  </div>
-<div className='bloque'>
+  </div></Link>
+  <Link to='videos'><div className='bloque'>
 <div className='cover'>
     <h2>Videos</h2>
   </div>
   <img  className='imagen-cover' src='https://i.imgur.com/G2dUvde.jpg' alt='frfp'></img>
-  </div>
-<div className='bloque'>
+  </div></Link>
+  <Link to='publicaciones'><div className='bloque'>
 <div className='cover'>
     <h2>Publicaciones</h2>
   </div>
   <img className='imagen-cover'  src='https://i.imgur.com/4HeKccU.jpg' alt='foto'></img></div>
-
+</Link>
            </div>
         </div>
          

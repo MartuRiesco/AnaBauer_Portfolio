@@ -8,8 +8,10 @@ import FotoDig from './components/FotoDig/FotoDig'
 import AboutMe from './components/AboutMe/AboutMe'
 import Publicaciones from './components/Publicaciones/Publicaciones'
 import Videos from './components/Videos/Videos'
+import Footer from './components/Footer/Footer'
+import DatosFotos from './components/DatosFotos/DatosFotos'
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <BrowserRouter>
@@ -21,13 +23,13 @@ function App() {
 
 <Route path='/' element={<Homepage/>}/>
 <Route path='/fotofija' element={<FotoFija/>}/>
-<Route path='/fotodigital' element={<FotoDig/>}/>
+<Route path='/fotodigital' element={<DatosFotos/>}/>
 <Route path='/aboutme' element={<AboutMe/>}/>
 <Route path='/publicaciones' element={<Publicaciones/>}/>
 <Route path='/videos' element={<Videos/>}/>
     </Routes>
    </main>
-  
+  <Footer></Footer>
     </div>
     </BrowserRouter>
   )
