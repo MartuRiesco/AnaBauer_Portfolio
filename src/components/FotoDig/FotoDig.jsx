@@ -1,17 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './style.css'
+import { getFotoDigital } from '../../services/firebase';
+import FotoDigitalData from '../FotoDigitalData/FotoDigitalData';
+import Loader from '../Loader/Loader';
 
-function FotoDig({datos}) {
- console.log(datos);
+function FotoDig() {
+  const [Datos, setDatos]= useState([])
+  const [loading, isLoading] =useState(true)
+  async function leerDatosFotos(){
+    let respuesta= await getFotoDigital()
+    setDatos(respuesta)
+    isLoading(false)
+  }
+ useEffect(( )=>{
+  leerDatosFotos()
+ },[])
   return ( <div>
-    <div className='contenedor'>
-<div className='img-container'>
-<div className='covers'>
-  <h2>{datos.titulo}</h2>
-</div>
-<img className='img-cont ' src='https://i.imgur.com/pY4MTXq.jpg' alt='foto'></img>
-</div>
-<div className='img-container'>
+    <div className='contenedor'>{
+      loading?
+      <Loader/>:
+      <FotoDigitalData datos={Datos}/>
+    }
+
+{/* <div className='img-container'>
 <div className='covers'>
   <h2>Foto Periodismo</h2>
 </div>
@@ -116,7 +127,7 @@ function FotoDig({datos}) {
 </section>
 <section id='europa'>
   
-</section>
+</section> */}
 </div>
     </div>
   )

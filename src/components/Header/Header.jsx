@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Header() {
   return (
          <header>  
-        <Link to='/'> <img src="https://i.imgur.com/YMHASwY.png" alt="logo" className='logo' /></Link>
+        <Link to='/'> <h2 className='titulo-pag'>Ana Bauer</h2></Link>
           <nav>
             <ul className='menu2'>
        <Link to='/fotodigital'>  <li className="menu"> Fotografía Digital   |</li></Link>   

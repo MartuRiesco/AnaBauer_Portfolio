@@ -1,23 +1,17 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
-import { getItems } from '../../services/firebase'
-import FotoDig from '../FotoDig/FotoDig';
-import Data from '../Data/Data';
-
-function DatosFotos() {
-    const [datos, setDatos]= useState([])
-    async function LeerDatos(){
-      let respuesta = await getItems();
-      setDatos(respuesta)
-      
-    }
-    useEffect(()=>{
-      LeerDatos();
-     }, []);
-   
+import { Link } from 'react-router-dom'
+function DatosFotos({item}) {
   return (
     <div>
-     <Data Datos={datos}/>
+      <Link to={item.category}>
+    <div className='bloque'>
+    <div className='cover'>
+        <h2>{item.title}</h2>
+      </div>
+      <img  className='imagen-cover' src={item.img} alt={item.description}></img>
+      
+      </div>
+      </Link>
     </div>
   )
 }

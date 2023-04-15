@@ -10,6 +10,7 @@ import Publicaciones from './components/Publicaciones/Publicaciones'
 import Videos from './components/Videos/Videos'
 import Footer from './components/Footer/Footer'
 import DatosFotos from './components/DatosFotos/DatosFotos'
+import FotoListContainer from './components/FotoListContainer/FotoListContainer'
 function App() {
  
 
@@ -21,9 +22,9 @@ function App() {
    <main>
     <Routes>
 
-<Route path='/' element={<Homepage/>}/>
+<Route path='/' element={<FotoListContainer/>}/>
 <Route path='/fotofija' element={<FotoFija/>}/>
-<Route path='/fotodigital' element={<DatosFotos/>}/>
+<Route path='/fotodigital' element={<FotoDig/>}/>
 <Route path='/aboutme' element={<AboutMe/>}/>
 <Route path='/publicaciones' element={<Publicaciones/>}/>
 <Route path='/videos' element={<Videos/>}/>

@@ -1,11 +1,12 @@
 import React from 'react'
 import FotoDig from '../FotoDig/FotoDig'
+import DatosFotos from '../DatosFotos/DatosFotos'
 
-function Data({Datos}) {
+function Data({datos}) {
+  let datosFt = datos.map((item)=> <DatosFotos  key={item.id} item={item} />)
   return (
-    Datos.map((datos)>= <FotoDig key={datos.id} dato={datos}/>)
-
-  )
-}
+datosFt
+)
+  }
 
 export default Data
