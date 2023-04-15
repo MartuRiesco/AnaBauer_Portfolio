@@ -32,3 +32,10 @@ const firebaseConfig = {
   const dataProductos= documents.map((doc)=> ({...doc.data(), id: doc.id}));
   return dataProductos
   }
+  export async function getFotoFija(){
+    const coleccionProductos = collection(db, "foto35mm");
+  let snapshotProductos= await getDocs(coleccionProductos);
+  const documents= snapshotProductos.docs;
+  const dataProductos= documents.map((doc)=> ({...doc.data(), id: doc.id}));
+  return dataProductos
+  }

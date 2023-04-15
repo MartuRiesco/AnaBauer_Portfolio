@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { getFotoFija } from '../../services/firebase'
+import FotoDigitalData from '../FotoDigitalData/FotoDigitalData'
+import Loader from '../Loader/Loader'
 
 function FotoFija() {
+  const [Datos, setDatos]= useState([])
+  const [loading, isLoading] =useState(true)
+  async function leerDatosFotos(){
+    let respuesta= await getFotoFija()
+    setDatos(respuesta)
+    isLoading(false)
+  }
+ useEffect(( )=>{
+  leerDatosFotos()
+ },[])
   return (
     <div className='contenedor'>
-    <div className='img-container'>
+{
+      loading?
+      <Loader/>:
+      <FotoDigitalData datos={Datos}/>
+    }
+    {/* <div className='img-container'>
     <div className='covers'>
       <h2>Retratos</h2>
     </div>
@@ -20,7 +38,7 @@ function FotoFija() {
       <h2>Interior</h2>
     </div>
     <img className='img-cont ' src='https://i.imgur.com/pYDWDo8.jpg' alt='foto'></img>
-    </div>
+    </div> */}
         </div>
   )
 }
