@@ -1,0 +1,24 @@
+
+/* .fotop{
+    overflow: hidden;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    max-width: 100%;
+    width: 100%;
+}
+.fotosperiodisimocat{
+    display: flex;
+    flex-wrap: nowrap;
+}
+/*  */ 
+.fotosp{
+ display: flex;
+ flex-wrap: wrap;
+}
+.img-per{
+    height: 600px;
+    width:auto;
+    display:table-cell
+}.categorias-fotop{
+  display: table;
+}

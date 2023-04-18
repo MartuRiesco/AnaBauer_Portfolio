@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 function FotoD({item}) {
   return (
-    <div> <Link to={item.title}>
+    <div> <Link to={item.category}>
       <div className='img-container'>
      
     <div className='covers'>

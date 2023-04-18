@@ -5,7 +5,7 @@ function DatosFotos({item}) {
     <div>
       <Link to={item.category}>
     <div className='bloque'>
-    <div className='cover'>
+    <div className='cover '>
         <h2>{item.title}</h2>
       </div>
       <img  className='imagen-cover' src={item.img} alt={item.description}></img>

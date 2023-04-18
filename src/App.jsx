@@ -11,6 +11,8 @@ import Videos from './components/Videos/Videos'
 import Footer from './components/Footer/Footer'
 import DatosFotos from './components/DatosFotos/DatosFotos'
 import FotoListContainer from './components/FotoListContainer/FotoListContainer'
+import FotoPeriodismo from './components/FotoPeriodismo/FotoPeriodismo'
+import CategoriaFotop from './components/CategoriaFotop/CategoriaFotop'
 function App() {
  
 
@@ -24,6 +26,8 @@ function App() {
 
 <Route path='/' element={<FotoListContainer/>}/>
 <Route path='/fotofija' element={<FotoFija/>}/>
+<Route path='/fotodigital/fotoperiodismo' element={<FotoPeriodismo/>}/>
+<Route path='fotodigital/fotoperiodismo/:idCategory' element={<CategoriaFotop/>}/>
 <Route path='/fotodigital' element={<FotoDig/>}/>
 <Route path='/aboutme' element={<AboutMe/>}/>
 <Route path='/publicaciones' element={<Publicaciones/>}/>

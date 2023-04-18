@@ -21,24 +21,6 @@ function FotoFija() {
       <Loader/>:
       <FotoDigitalData datos={Datos}/>
     }
-    {/* <div className='img-container'>
-    <div className='covers'>
-      <h2>Retratos</h2>
-    </div>
-    <img className='img-cont ' src='https://i.imgur.com/pY4MTXq.jpg' alt='foto'></img>
-    </div>
-    <div className='img-container'>
-    <div className='covers'>
-      <h2>Exterior</h2>
-    </div>
-    <img className='img-cont ' src='https://i.imgur.com/bcplBC7.jpg' alt='foto'></img>
-    </div>
-    <div className='img-container'>
-    <div className='covers'>
-      <h2>Interior</h2>
-    </div>
-    <img className='img-cont ' src='https://i.imgur.com/pYDWDo8.jpg' alt='foto'></img>
-    </div> */}
         </div>
   )
 }

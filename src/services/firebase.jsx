@@ -11,15 +11,15 @@ const firebaseConfig = {
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app)
   export async function getItems(){
-    const coleccionProductos = collection(db, "diariodeviaje");
+    const coleccionProductos = collection(db, "principal");
   let snapshotProductos= await getDocs(coleccionProductos);
   const documents= snapshotProductos.docs;
   const dataProductos= documents.map((doc)=> ({...doc.data(), id: doc.id}));
   return dataProductos
   }
   export async function getCategory(categoriaURL){
-    const coleccionProductos = collection(db, "diariodeviaje");
-    const q = query(coleccionProductos, where("categoria", "==", categoriaURL));
+    const coleccionProductos = collection(db, "europa");
+    const q = query(coleccionProductos, where("category", "==", categoriaURL));
     let snapshotProductos= await getDocs(q);
   const documents= snapshotProductos.docs;
   const dataProductos= documents.map((doc)=> ({...doc.data(), id: doc.id}));
@@ -38,4 +38,18 @@ const firebaseConfig = {
   const documents= snapshotProductos.docs;
   const dataProductos= documents.map((doc)=> ({...doc.data(), id: doc.id}));
   return dataProductos
+  }
+  export async function getFotoPeriodismo(){
+    const coleccionProductos = collection(db, "fotoperiodismo");
+  let snapshotProductos= await getDocs(coleccionProductos);
+  const documents= snapshotProductos.docs;
+  const dataProductos= documents.map((doc)=> ({...doc.data(), id: doc.id}));
+  return dataProductos
+  }
+  export async function FotosPeriodismo(){
+    const coleccionProductos = collection(db,'europa');
+    let snapshotProductos= await getDocs(coleccionProductos);
+    const documents= snapshotProductos.docs;
+    const dataProductos= documents.map((doc)=> ({...doc.data(), id: doc.id}));
+    return dataProductos
   }
