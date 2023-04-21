@@ -12,13 +12,27 @@
 }
 /*  */ 
 .fotosp{
- display: flex;
- flex-wrap: wrap;
+ display: grid;
+ grid-template-columns:  1fr  1fr;
+ grid-template-areas: "foto1  foto3"
+ "  foto4 foto2";
+/*  flex-wrap: wrap;
+ margin-left: 50px; */
 }
 .img-per{
-    height: 600px;
+    height: 650px;
     width:auto;
-    display:table-cell
-}.categorias-fotop{
-  display: table;
+    padding: 5px;
+}
+.fotosp .foto1{
+    grid-area: foto1;
+}
+.fotosp .foto2{
+    grid-area: foto2;
+}
+.fotosp .foto3{
+    grid-area: foto3;
+}
+.fotosp .foto4{
+    grid-area: foto4;
 }

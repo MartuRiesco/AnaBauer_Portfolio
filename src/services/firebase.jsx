@@ -53,3 +53,10 @@ const firebaseConfig = {
     const dataProductos= documents.map((doc)=> ({...doc.data(), id: doc.id}));
     return dataProductos
   }
+  export async function getVideos(){
+    const coleccionProductos = collection(db, "videos");
+  let snapshotProductos= await getDocs(coleccionProductos);
+  const documents= snapshotProductos.docs;
+  const dataProductos= documents.map((doc)=> ({...doc.data(), id: doc.id}));
+  return dataProductos
+  }
