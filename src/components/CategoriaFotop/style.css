@@ -11,19 +11,44 @@
     flex-wrap: nowrap;
 }
 /*  */ 
+.categorias-fotop{
+
+    display: grid;
+}
 .fotosp{
  display: grid;
- grid-template-columns:  1fr  1fr;
- grid-template-areas: "foto1  foto3"
- "  foto4 foto2";
+ grid-template-areas: " foto1 foto1 foto1 foto3 foto3  "
+ "  foto4 foto2 foto2 foto2 foto2"
+ "  foto5 foto5 foto5 foto6  foto6 " ;
 /*  flex-wrap: wrap;
  margin-left: 50px; */
 }
 .img-per{
+    cursor: zoom-in;
     height: 650px;
-    width:auto;
+  width: 100%;
     padding: 5px;
+   
 }
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6 > .img-per{
+    width: 100%;
+ 
+}
+/* .foto2 .img-per{
+    width: 100%;
+} */
+/* .foto3 .img-per{
+    width: 100%;
+}
+.foto4 .img-per{
+    width: 100%;
+}
+.foto5 .img-per{
+    width: 100%;
+}
+.foto6 .img-per{
+    width: 100%;
+} */
 .fotosp .foto1{
     grid-area: foto1;
 }
@@ -35,4 +60,12 @@
 }
 .fotosp .foto4{
     grid-area: foto4;
+}
+
+.fotosp .foto5{
+    grid-area: foto5;
+}
+
+.fotosp .foto6{
+    grid-area: foto6;
 }

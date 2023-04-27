@@ -13,6 +13,10 @@ import DatosFotos from './components/DatosFotos/DatosFotos'
 import FotoListContainer from './components/FotoListContainer/FotoListContainer'
 import FotoPeriodismo from './components/FotoPeriodismo/FotoPeriodismo'
 import CategoriaFotop from './components/CategoriaFotop/CategoriaFotop'
+import DiarioDeViaje from './components/DiarioDeViaje/DiarioDeViaje'
+import RetratosFD from './components/RetratosFD/RetratosFD'
+import Direccion from './components/Direccion/Direccion'
+import CategoriasDireccion from './components/CategoriasDireccion/CategoriasDireccion'
 function App() {
  
 
@@ -26,12 +30,16 @@ function App() {
 
 <Route path='/' element={<FotoListContainer/>}/>
 <Route path='/fotofija' element={<FotoFija/>}/>
-<Route path='/fotodigital/fotoperiodismo' element={<FotoPeriodismo/>}/>
-<Route path='fotodigital/fotoperiodismo/:idCategory' element={<CategoriaFotop/>}/>
 <Route path='/fotodigital' element={<FotoDig/>}/>
+<Route path='/fotodigital/fotoperiodismo' element={<FotoPeriodismo/>}/>
+<Route path='/fotodigital/retratos' element={<RetratosFD/>}/>
+<Route path='/fotodigital/diariodeviaje' element={<DiarioDeViaje/>}/>
+<Route path='fotodigital/diariodeviaje/:idCategory' element={<CategoriaFotop/>}/>
 <Route path='/aboutme' element={<AboutMe/>}/>
 <Route path='/publicaciones' element={<Publicaciones/>}/>
 <Route path='/videos' element={<Videos/>}/>
+<Route path='/videos/direccion' element={<Direccion/>}/>
+<Route path='/videos/direccion/:idVideos' element={<CategoriasDireccion/>}/>
     </Routes>
    </main>
   <Footer></Footer>

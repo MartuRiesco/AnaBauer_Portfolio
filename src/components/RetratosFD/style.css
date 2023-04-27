@@ -1,0 +1,13 @@
+.retratosFD{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bloque-rd{
+    height: 86vh;
+  
+}
+.imagen-cover-rd{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
