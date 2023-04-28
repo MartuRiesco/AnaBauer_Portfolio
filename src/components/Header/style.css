@@ -1,11 +1,16 @@
+
+@font-face {
+    font-family: "barlow-black";
+    src: url(../../fonts/Barlow-Bold.ttf);
+}
 .menu{
  margin: 4px;
-   
+   padding: 10px;
    color: white;
     list-style: none;}
     
 .menu2{
-    margin: 10px;
+    margin: 30px;
     display: flex;
     flex-direction: row;
 
@@ -26,9 +31,12 @@ top:0;
     display: block;
 }
 .titulo-pag{
+   
     color:white;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-padding:5px;
-margin-left: 30px;
-font-weight: 600;
+font-family: "barlow-black";
+padding:10px;
+
+/* font-weight: 600; */
 }
+.loguito{  display: flex;
+    flex-direction: row; margin-left: 30px;}

@@ -1,12 +1,18 @@
 .footer{
-    background-color: black;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
+    background-color: black;
     height: 70px;
+    justify-content: space-evenly;
 }
 .icon{
-  size: 20px;
+margin: 15px;
+
     color:white;
+}
+.logos-footer{
+  color: white;
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

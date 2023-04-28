@@ -19,7 +19,9 @@ import Direccion from './components/Direccion/Direccion'
 import CategoriasDireccion from './components/CategoriasDireccion/CategoriasDireccion'
 function App() {
  
-
+ document.oncontextmenu= function(){
+  return false
+ }
   return (
     <BrowserRouter>
     <div className="App">

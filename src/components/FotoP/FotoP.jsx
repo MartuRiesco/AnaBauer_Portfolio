@@ -14,6 +14,8 @@ function FotoP({item}) {
     
     </div>
     </Link>
+   
+
   </div>
   )
 }
