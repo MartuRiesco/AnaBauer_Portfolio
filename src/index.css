@@ -99,9 +99,13 @@ button:focus-visible {
     .cover, .covers, .cover-fotoperiodismo, .cover-diariodeviaje, .covers-video{
       width: 100%;
     }
-    .contenedor,  .fotoperiodismo, .project-coverses, .retratosFD, .diariodeviaje, .contenedor-videos, .direccion{
+    .contenedor,  .fotoperiodismo, .project-coverses, .retratosFD, .diariodeviaje, .contenedor-videos, .direccion, .categorias-fotop {
       grid-template-columns: 1fr;
     }
-    
+    .fotosp{
+      display: inline;
+    }
+    .img-per {height: 100%;}
+    .modal-cont{height: auto;}
    
 }
