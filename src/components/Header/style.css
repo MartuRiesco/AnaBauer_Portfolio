@@ -73,7 +73,7 @@
     opacity: 1;
   }
 
-  .header nav {
+   nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -88,7 +88,7 @@
     transform: translateY(-100vh);
     background-color: black;
   }
-  .header .responsive_nav {
+  .responsive_nav {
     transform: none;
   }
   .cart {
