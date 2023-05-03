@@ -1,20 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "barlow";
-  }
-  @font-face {
-    font-family: "barlow";
-    src: url(./fonts/Barlow-Regular.ttf);
-  }
-
+  font-family: 'barlow';
+}
+@font-face {
+  font-family: 'barlow';
+  src: url(./fonts/Barlow-Regular.ttf);
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -36,7 +35,7 @@ a:hover {
 }
 
 body {
-background-color: black;
+  background-color: black;
   width: 100%;
   margin: 0;
   /* display: flex; */
@@ -83,30 +82,41 @@ button:focus-visible {
 }
 
 @media screen and (min-width: 320px) and (max-width: 420px) {
-            
-  
-  .loguito{
+  .loguito {
     align-items: center;
-   }
-    .titulo-pag{
-        font-size: smaller;
-        justify-content: center;
-        font-size: smaller;
-        width: 63px;
-        padding: 5px;
-        align-items: center;
-    }
-    .cover, .covers, .cover-fotoperiodismo, .cover-diariodeviaje, .covers-video{
-      width: 100%;
-    }
-    .contenedor,  .fotoperiodismo, .project-coverses, .retratosFD, .diariodeviaje, .contenedor-videos, .direccion, .categorias-fotop {
-      grid-template-columns: 1fr;
-    }
-    .fotosp{
-      display: inline;
-    }
-    .img-per {height: 100%;}
-    .modal-cont{height: auto;}
-  
-   
+  }
+  .titulo-pag {
+    font-size: smaller;
+    justify-content: center;
+    font-size: smaller;
+    width: 63px;
+    padding: 5px;
+    align-items: center;
+  }
+  .cover,
+  .covers,
+  .cover-fotoperiodismo,
+  .cover-diariodeviaje,
+  .covers-video {
+    width: 100%;
+  }
+  .contenedor,
+  .fotoperiodismo,
+  .project-coverses,
+  .retratosFD,
+  .diariodeviaje,
+  .contenedor-videos,
+  .direccion,
+  .categorias-fotop {
+    grid-template-columns: 1fr;
+  }
+  .fotosp {
+    display: inline;
+  }
+  .img-per {
+    height: 100%;
+  }
+  .modal-cont {
+    height: auto;
+  }
 }

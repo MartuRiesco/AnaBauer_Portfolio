@@ -1,11 +1,9 @@
-import React from 'react'
-import VideoC from '../VideoC/VideoC'
+import React from 'react';
+import VideoC from '../VideoC/VideoC';
 
-function VideosCategorias({datos}) {
-    let datosFotos =datos.map((item)=>< VideoC item={item}/>)
-  return (
-    datosFotos
-  )
+function VideosCategorias({ datos }) {
+  let datosFotos = datos.map((item) => <VideoC item={item} />);
+  return datosFotos;
 }
 
-export default VideosCategorias
+export default VideosCategorias;

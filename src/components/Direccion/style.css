@@ -1,4 +1,4 @@
-.direccion{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.direccion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

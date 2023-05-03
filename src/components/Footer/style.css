@@ -1,15 +1,15 @@
-.footer{
-    display: flex;
-    background-color: black;
-    height: 70px;
-    justify-content: space-evenly;
+.footer {
+  display: flex;
+  background-color: black;
+  height: 70px;
+  justify-content: space-evenly;
 }
-.icon{
-margin: 15px;
+.icon {
+  margin: 15px;
 
-    color:white;
+  color: white;
 }
-.logos-footer{
+.logos-footer {
   color: white;
   margin: 40px;
   display: flex;

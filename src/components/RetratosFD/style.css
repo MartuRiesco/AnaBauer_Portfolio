@@ -1,13 +1,12 @@
-.retratosFD{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.retratosFD {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.bloque-rd{
-    height: 86vh;
-  
+.bloque-rd {
+  height: 86vh;
 }
-.imagen-cover-rd{
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+.imagen-cover-rd {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }

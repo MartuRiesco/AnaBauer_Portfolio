@@ -1,4 +1,3 @@
-
 /* .fotop{
     overflow: hidden;
     padding-bottom: 40px;
@@ -10,29 +9,31 @@
     display: flex;
     flex-wrap: nowrap;
 }
-/*  */ 
-.categorias-fotop{
-
-    display: grid;
+/*  */
+.categorias-fotop {
+  display: grid;
 }
-.fotosp{
- display: grid;
- grid-template-areas: " foto1 foto1 foto1 foto3 foto3  "
- "  foto4 foto2 foto2 foto2 foto2"
- "  foto5 foto5 foto5 foto6  foto6 " ;
-/*  flex-wrap: wrap; */
-
+.fotosp {
+  display: grid;
+  grid-template-areas:
+    ' foto1 foto1 foto1 foto3 foto3  '
+    '  foto4 foto2 foto2 foto2 foto2'
+    '  foto5 foto5 foto5 foto6  foto6 ';
+  /*  flex-wrap: wrap; */
 }
-.img-per{
-    cursor: zoom-in;
-    height: 650px;
+.img-per {
+  cursor: zoom-in;
+  height: 650px;
   width: 100%;
-    padding: 5px;
-   
+  padding: 5px;
 }
-.foto1, .foto2, .foto3, .foto4, .foto5, .foto6 > .img-per{
-    width: 100%;
- 
+.foto1,
+.foto2,
+.foto3,
+.foto4,
+.foto5,
+.foto6 > .img-per {
+  width: 100%;
 }
 /* .foto2 .img-per{
     width: 100%;
@@ -49,23 +50,23 @@
 .foto6 .img-per{
     width: 100%;
 } */
-.fotosp .foto1{
-    grid-area: foto1;
+.fotosp .foto1 {
+  grid-area: foto1;
 }
-.fotosp .foto2{
-    grid-area: foto2;
+.fotosp .foto2 {
+  grid-area: foto2;
 }
-.fotosp .foto3{
-    grid-area: foto3;
+.fotosp .foto3 {
+  grid-area: foto3;
 }
-.fotosp .foto4{
-    grid-area: foto4;
-}
-
-.fotosp .foto5{
-    grid-area: foto5;
+.fotosp .foto4 {
+  grid-area: foto4;
 }
 
-.fotosp .foto6{
-    grid-area: foto6;
+.fotosp .foto5 {
+  grid-area: foto5;
+}
+
+.fotosp .foto6 {
+  grid-area: foto6;
 }

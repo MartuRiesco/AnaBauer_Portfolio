@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 function Publicaciones() {
   return (
-    <div><h1>Publicsciones</h1></div>
-  )
+    <div>
+      <h1>Publicsciones</h1>
+    </div>
+  );
 }
 
-export default Publicaciones
+export default Publicaciones;
