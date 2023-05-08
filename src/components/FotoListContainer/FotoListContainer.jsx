@@ -1,5 +1,6 @@
 import React from 'react';
 import Data from '../Data/Data';
+import './styles.css'
 import { getItems } from '../../services/firebase';
 import { useEffect, useState } from 'react';
 import Loader from '../Loader/Loader';

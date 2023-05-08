@@ -43,6 +43,8 @@
   color: white;
   background-color: black;
   list-style: none;
+  border-style: none;
+  border-color: black;
   color: white;
   margin: 0 15px;
   font-size: 1rem;
@@ -76,6 +78,7 @@
    nav {
     position: absolute;
     top: 0;
+    z-index: 9999;
     left: 0;
     height: 100%;
     width: 100%;

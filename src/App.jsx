@@ -1,15 +1,13 @@
-import { useState } from 'react';
+
 import './App.css';
 import Header from './components/Header/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Homepage from './components/Homepage/Homepage';
 import FotoFija from './components/FotoFija/FotoFija';
 import FotoDig from './components/FotoDig/FotoDig';
 import AboutMe from './components/AboutMe/AboutMe';
 import Publicaciones from './components/Publicaciones/Publicaciones';
 import Videos from './components/Videos/Videos';
 import Footer from './components/Footer/Footer';
-import DatosFotos from './components/DatosFotos/DatosFotos';
 import FotoListContainer from './components/FotoListContainer/FotoListContainer';
 import FotoPeriodismo from './components/FotoPeriodismo/FotoPeriodismo';
 import CategoriaFotop from './components/CategoriaFotop/CategoriaFotop';
@@ -54,7 +52,7 @@ function App() {
             />
           </Routes>
         </main>
-        <Footer></Footer>
+       {/*  <Footer></Footer> */}
       </div>
     </BrowserRouter>
   );

@@ -1,0 +1,60 @@
+.form-titulo{
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-seccion{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.form-label{
+    margin: 5px 0 5px 50px;
+    padding: 5px;
+    color: white;
+ font-size: large
+}
+.form-input{
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    border-style: none;
+    margin: 5px 0 5px 50px;
+    background-color: rgb(47, 47, 47);
+}
+.form-button{
+    margin: 5px 0 20px 55px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: black;
+}
+.textarea{
+    height: 100px;
+}
+.instagram{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 140px;
+}
+.instagram-logo{
+    border-radius: 10px;
+    padding: 5px;
+}
+.instagram-titu{
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+  
+}
+.instagram-logo a{
+    color: white;
+}
