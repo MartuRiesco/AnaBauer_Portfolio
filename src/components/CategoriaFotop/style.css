@@ -16,10 +16,14 @@
 .fotosp {
   display: grid;
   grid-template-areas:
-    ' foto1 foto1 foto1 foto3 foto3  '
-    '  foto4 foto2 foto2 foto2 foto2'
-    '  foto5 foto5 foto5 foto6  foto6 ';
-  /*  flex-wrap: wrap; */
+    'foto1 foto1 foto1 foto3 foto3  '
+    'foto2 foto4 foto4 foto4 foto4'
+    'foto5 foto5 foto5 foto6  foto6 '
+    'foto7 foto8 foto8 foto8 foto8'
+    'foto10 foto10 foto10 foto10 foto9'
+    'foto11 foto12 foto12 foto12 foto12'
+    'foto13 foto13 foto13 foto13 foto14';
+
 }
 .img-per {
   cursor: zoom-in;
@@ -32,7 +36,15 @@
 .foto3,
 .foto4,
 .foto5,
-.foto6 > .img-per {
+.foto6,
+.foto7,
+.foto8,
+.foto9,
+.foto10,
+.foto11,
+.foto12,
+.foto13,
+.foto14 > .img-per {
   width: 100%;
 }
 /* .foto2 .img-per{
@@ -69,4 +81,28 @@
 
 .fotosp .foto6 {
   grid-area: foto6;
+}
+.fotosp .foto7 {
+  grid-area: foto7;
+}
+.fotosp .foto8 {
+  grid-area: foto8;
+}
+.fotosp .foto9 {
+  grid-area: foto9;
+}
+.fotosp .foto10 {
+  grid-area: foto10;
+}
+.fotosp .foto11 {
+  grid-area: foto11;
+}
+.fotosp .foto12 {
+  grid-area: foto12;
+}
+.fotosp .foto13 {
+  grid-area: foto13;
+}
+.fotosp .foto14 {
+  grid-area: foto14;
 }

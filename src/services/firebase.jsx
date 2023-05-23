@@ -24,7 +24,7 @@ export async function getItems() {
   let snapshotProductos = await getDocs(coleccionProductos);
   const documents = snapshotProductos.docs;
   const dataProductos = documents.map((doc) => ({ ...doc.data(), id: doc.id }));
-  return dataProductos;
+  return dataProductos; 
 }
 export async function getCategory(categoriaURL) {
   const coleccionProductos = collection(db, 'europa');
